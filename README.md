@@ -45,4 +45,4 @@ queue.enqueue(Notification.init('update', null, 'Y'), PostingStyle.asap);
 
 ### API
 
-See [documents](docs/README.md)
+See [documents](https://github.com/nilennoct/notification-queue/blob/master/docs/README.md)

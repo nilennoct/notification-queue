@@ -8,16 +8,15 @@
     "build": "run-p build:*",
     "build:lib": "tsc --module commonjs --outDir lib",
     "build:es": "tsc --module es6 --outDir es",
-    "clean": "rm -rf es lib docs;",
-    "docs": "typedoc --plugin typedoc-plugin-example-tag,typedoc-plugin-markdown",
-    "prepare": "run-s clean build docs",
+    "clean": "rm -rf es lib;",
+    "docs": "rm -rf docs && typedoc --plugin typedoc-plugin-example-tag,typedoc-plugin-markdown",
+    "prepare": "run-s clean build",
     "test": "jest",
     "coverage": "jest --coverage"
   },
   "files": [
     "lib",
-    "es",
-    "docs"
+    "es"
   ],
   "readme": "docs/README.md",
   "license": "MIT",
