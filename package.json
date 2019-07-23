@@ -18,22 +18,21 @@
     "lib",
     "es"
   ],
-  "readme": "docs/README.md",
   "license": "MIT",
   "dependencies": {
     "asap": "^2.0.6"
   },
   "devDependencies": {
     "@types/asap": "^2.0.0",
-    "@types/jest": "^23.0.0",
-    "@types/node": "^11.9.4",
-    "jest": "^23.0.0",
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.6.8",
+    "jest": "^24.8.0",
     "npm-run-all": "^4.1.5",
-    "ts-jest": "^23.0.0",
+    "ts-jest": "^24.0.2",
     "typedoc": "^0.14.2",
     "typedoc-plugin-example-tag": "^1.0.2",
     "typedoc-plugin-markdown": "^1.1.26",
-    "typescript": "^3.3.3"
+    "typescript": "^3.5.3"
   },
   "repository": "https://github.com/nilennoct/notification-queue.git",
   "author": "nilennoct <hfdjf007@163.com>"

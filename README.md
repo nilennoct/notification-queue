@@ -1,8 +1,8 @@
 A JavaScript implement of NotificationQueue and NotificationCenter.
 
 ## Installation
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fnilennoct%2Fnotification-queue.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fnilennoct%2Fnotification-queue?ref=badge_shield)
 
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fnilennoct%2Fnotification-queue.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fnilennoct%2Fnotification-queue?ref=badge_shield)
 
 ```shell
 npm install notification-queue
@@ -51,4 +51,5 @@ See [documents](https://github.com/nilennoct/notification-queue/blob/master/docs
 
 
 ## License
+
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fnilennoct%2Fnotification-queue.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fnilennoct%2Fnotification-queue?ref=badge_large)
