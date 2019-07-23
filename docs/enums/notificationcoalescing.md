@@ -22,7 +22,7 @@ The enum that specify how notifications are coalesced.
 
 **none**:  = 0
 
-*Defined in [NotificationQueue.ts:10](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationQueue.ts#L10)*
+*Defined in [NotificationQueue.ts:10](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationQueue.ts#L10)*
 
 Do not coalesce notifications in the queue.
 
@@ -33,7 +33,7 @@ ___
 
 **onName**:  =  1 << 0
 
-*Defined in [NotificationQueue.ts:12](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationQueue.ts#L12)*
+*Defined in [NotificationQueue.ts:12](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationQueue.ts#L12)*
 
 Coalesce notifications with the same name.
 
@@ -44,7 +44,7 @@ ___
 
 **onSender**:  =  1 << 1
 
-*Defined in [NotificationQueue.ts:14](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationQueue.ts#L14)*
+*Defined in [NotificationQueue.ts:14](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationQueue.ts#L14)*
 
 Coalesce notifications with the same object.
 

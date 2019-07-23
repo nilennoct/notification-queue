@@ -37,7 +37,7 @@ The type of data.
 
 ⊕ **new Notification**(name: *`string`*, object: *`object` \| `null`*, data: *`T`*): [Notification](notification.md)
 
-*Defined in [Notification.ts:8](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/Notification.ts#L8)*
+*Defined in [Notification.ts:8](https://github.com/nilennoct/notification-queue/blob/0247334/src/Notification.ts#L8)*
 
 Initializes a new notification.
 
@@ -50,7 +50,7 @@ Initializes a new notification.
 
 **Returns:** [Notification](notification.md)
 
-*Defined in [Notification.ts:15](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/Notification.ts#L15)*
+*Defined in [Notification.ts:15](https://github.com/nilennoct/notification-queue/blob/0247334/src/Notification.ts#L15)*
 
 Initializes a new notification.
 
@@ -74,7 +74,7 @@ ___
 
 **● data**: *`T`*
 
-*Defined in [Notification.ts:8](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/Notification.ts#L8)*
+*Defined in [Notification.ts:8](https://github.com/nilennoct/notification-queue/blob/0247334/src/Notification.ts#L8)*
 
 ___
 <a id="name"></a>
@@ -83,7 +83,7 @@ ___
 
 **● name**: *`string`*
 
-*Defined in [Notification.ts:6](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/Notification.ts#L6)*
+*Defined in [Notification.ts:6](https://github.com/nilennoct/notification-queue/blob/0247334/src/Notification.ts#L6)*
 
 ___
 <a id="object"></a>
@@ -92,7 +92,7 @@ ___
 
 **● object**: *`object` \| `null`*
 
-*Defined in [Notification.ts:7](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/Notification.ts#L7)*
+*Defined in [Notification.ts:7](https://github.com/nilennoct/notification-queue/blob/0247334/src/Notification.ts#L7)*
 
 ___
 

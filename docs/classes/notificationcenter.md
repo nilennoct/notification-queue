@@ -37,7 +37,7 @@ A notification dispatch mechanism that enables the broadcast of information to r
 
 **● list**: *[NotificationObserver](../interfaces/notificationobserver.md)[]* =  []
 
-*Defined in [NotificationCenter.ts:23](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L23)*
+*Defined in [NotificationCenter.ts:23](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L23)*
 
 ___
 <a id="listener"></a>
@@ -46,7 +46,7 @@ ___
 
 **● listener**: *`undefined` \| `function`*
 
-*Defined in [NotificationCenter.ts:25](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L25)*
+*Defined in [NotificationCenter.ts:25](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L25)*
 
 ___
 <a id="listeners"></a>
@@ -55,7 +55,7 @@ ___
 
 **● listeners**: *`Array`<`function`>*
 
-*Defined in [NotificationCenter.ts:26](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L26)*
+*Defined in [NotificationCenter.ts:26](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L26)*
 
 ___
 <a id="defaultcenter"></a>
@@ -64,7 +64,7 @@ ___
 
 **● defaultCenter**: *[NotificationCenter](notificationcenter.md)*
 
-*Defined in [NotificationCenter.ts:22](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L22)*
+*Defined in [NotificationCenter.ts:22](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L22)*
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 **get default**(): [NotificationCenter](notificationcenter.md)
 
-*Defined in [NotificationCenter.ts:31](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L31)*
+*Defined in [NotificationCenter.ts:31](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L31)*
 
 Returns the default notification center.
 
@@ -96,7 +96,7 @@ ___
 
 ▸ **addObserver**<`T`>(observer: *`object`*, name: *`string`*, object: *`object` \| `null`*, listener: *`function`*): `void`
 
-*Defined in [NotificationCenter.ts:50](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L50)*
+*Defined in [NotificationCenter.ts:50](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L50)*
 
 Adds an entry to the notification center and returns an opaque object to act as the observer.
 
@@ -121,7 +121,7 @@ const token = NotificationCenter.default.addObserver('update', null, (notificati
 
 **Returns:** `object`
 
-*Defined in [NotificationCenter.ts:79](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L79)*
+*Defined in [NotificationCenter.ts:79](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L79)*
 
 Adds an entry to the notification center with an observer and a notification selector.
 
@@ -164,7 +164,7 @@ NotificationCenter.default.addObserver(component, 'update', null, 'onNotify');
 
 **Returns:** `void`
 
-*Defined in [NotificationCenter.ts:87](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L87)*
+*Defined in [NotificationCenter.ts:87](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L87)*
 
 Adds an entry to the notification center with an observer and a callback.
 
@@ -193,7 +193,7 @@ ___
 
 ▸ **post**(name: *`string`*, object?: *`undefined` \| `object`*): `void`
 
-*Defined in [NotificationCenter.ts:173](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L173)*
+*Defined in [NotificationCenter.ts:173](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L173)*
 
 Posts a given notification to the notification center.
 
@@ -205,7 +205,7 @@ Posts a given notification to the notification center.
 
 **Returns:** `void`
 
-*Defined in [NotificationCenter.ts:180](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L180)*
+*Defined in [NotificationCenter.ts:180](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L180)*
 
 Creates a notification with a given name, object, and data and posts it to the notification center.
 
@@ -219,7 +219,7 @@ Creates a notification with a given name, object, and data and posts it to the n
 
 **Returns:** `void`
 
-*Defined in [NotificationCenter.ts:186](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L186)*
+*Defined in [NotificationCenter.ts:186](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L186)*
 
 Creates a notification with a given name and object and posts it to the notification center.
 
@@ -245,7 +245,7 @@ ___
 
 ▸ **removeObserver**(observer: *`object`*, name: *`string`*, object: *`object`*): `void`
 
-*Defined in [NotificationCenter.ts:119](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L119)*
+*Defined in [NotificationCenter.ts:119](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L119)*
 
 Removes all entries specifying a given observer from the notification center.
 
@@ -257,7 +257,7 @@ Removes all entries specifying a given observer from the notification center.
 
 **Returns:** `void`
 
-*Defined in [NotificationCenter.ts:125](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L125)*
+*Defined in [NotificationCenter.ts:125](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L125)*
 
 Removes all entries specifying a given observer and notification name from the notification center.
 
@@ -270,7 +270,7 @@ Removes all entries specifying a given observer and notification name from the n
 
 **Returns:** `void`
 
-*Defined in [NotificationCenter.ts:131](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L131)*
+*Defined in [NotificationCenter.ts:131](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L131)*
 
 Removes all entries specifying a given observer and notification object from the notification center.
 
@@ -283,7 +283,7 @@ Removes all entries specifying a given observer and notification object from the
 
 **Returns:** `void`
 
-*Defined in [NotificationCenter.ts:138](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L138)*
+*Defined in [NotificationCenter.ts:138](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L138)*
 
 Removes all entries specifying a given observer, notification name and object from the notification center.
 

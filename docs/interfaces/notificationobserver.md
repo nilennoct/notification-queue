@@ -25,7 +25,7 @@
 
 **● listener**: *`string` \| [NotificationListener](../#notificationlistener)*
 
-*Defined in [NotificationCenter.ts:15](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L15)*
+*Defined in [NotificationCenter.ts:15](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L15)*
 
 ___
 <a id="name"></a>
@@ -34,7 +34,7 @@ ___
 
 **● name**: *`string`*
 
-*Defined in [NotificationCenter.ts:13](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L13)*
+*Defined in [NotificationCenter.ts:13](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L13)*
 
 ___
 <a id="object"></a>
@@ -43,7 +43,7 @@ ___
 
 **● object**: *`object` \| `null`*
 
-*Defined in [NotificationCenter.ts:14](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L14)*
+*Defined in [NotificationCenter.ts:14](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L14)*
 
 ___
 <a id="observer"></a>
@@ -52,7 +52,7 @@ ___
 
 **● observer**: *`any`*
 
-*Defined in [NotificationCenter.ts:12](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L12)*
+*Defined in [NotificationCenter.ts:12](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L12)*
 
 ___
 

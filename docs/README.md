@@ -33,7 +33,7 @@
 
 **Ƭ KeyOfListener**: *`{ [K in keyof T]: T[K] extends (...args: infer P) => void ? P extends [Notification<void>] | [] ? K : never : never; }[keyof T]`*
 
-*Defined in [NotificationCenter.ts:3](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L3)*
+*Defined in [NotificationCenter.ts:3](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L3)*
 
 ___
 <a id="notificationlistener"></a>
@@ -42,7 +42,7 @@ ___
 
 **Ƭ NotificationListener**: *`function`*
 
-*Defined in [NotificationCenter.ts:9](https://github.com/nilennoct/notification-queue/blob/ede40cb/src/NotificationCenter.ts#L9)*
+*Defined in [NotificationCenter.ts:9](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L9)*
 
 #### Type declaration
 ▸(notification: *[Notification](classes/notification.md)<`any`>*): `void`
