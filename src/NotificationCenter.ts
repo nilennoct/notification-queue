@@ -22,9 +22,6 @@ export class NotificationCenter {
     private static defaultCenter: NotificationCenter;
     protected list: NotificationObserver[] = [];
 
-    listener?: () => void;
-    listeners?: Array<() => void>;
-
     /**
      * Returns the default notification center.
      */
