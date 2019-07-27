@@ -1,10 +1,12 @@
-[notification-queue](../README.md) > [NotificationObserver](../interfaces/notificationobserver.md)
+> **[notification-queue](../README.md)**
+
+[NotificationObserver](notificationobserver.md) /
 
 # Interface: NotificationObserver
 
 ## Hierarchy
 
-**NotificationObserver**
+* **NotificationObserver**
 
 ## Index
 
@@ -15,44 +17,34 @@
 * [object](notificationobserver.md#object)
 * [observer](notificationobserver.md#observer)
 
----
-
 ## Properties
-
-<a id="listener"></a>
 
 ###  listener
 
-**● listener**: *`string` \| [NotificationListener](../#notificationlistener)*
+• **listener**: *string | [NotificationListener](../README.md#notificationlistener)*
 
-*Defined in [NotificationCenter.ts:15](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L15)*
+*Defined in [NotificationCenter.ts:15](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L15)*
 
 ___
-<a id="name"></a>
 
 ###  name
 
-**● name**: *`string`*
+• **name**: *string*
 
-*Defined in [NotificationCenter.ts:13](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L13)*
+*Defined in [NotificationCenter.ts:13](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L13)*
 
 ___
-<a id="object"></a>
 
 ###  object
 
-**● object**: *`object` \| `null`*
+• **object**: *object | null*
 
-*Defined in [NotificationCenter.ts:14](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L14)*
+*Defined in [NotificationCenter.ts:14](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L14)*
 
 ___
-<a id="observer"></a>
 
 ###  observer
 
-**● observer**: *`any`*
+• **observer**: *any*
 
-*Defined in [NotificationCenter.ts:12](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L12)*
-
-___
-
+*Defined in [NotificationCenter.ts:12](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L12)*

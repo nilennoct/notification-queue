@@ -1,5 +1,4 @@
-
-#  notification-queue
+> **[notification-queue](README.md)**
 
 ## Index
 
@@ -20,40 +19,31 @@
 
 ### Type aliases
 
-* [KeyOfListener](#keyoflistener)
-* [NotificationListener](#notificationlistener)
-
----
+* [KeyOfListener](README.md#keyoflistener)
+* [NotificationListener](README.md#notificationlistener)
 
 ## Type aliases
 
-<a id="keyoflistener"></a>
-
 ###  KeyOfListener
 
-**Ƭ KeyOfListener**: *`{ [K in keyof T]: T[K] extends (...args: infer P) => void ? P extends [Notification<void>] | [] ? K : never : never; }[keyof T]`*
+Ƭ **KeyOfListener**: *`{ [K in keyof T]: T[K] extends (...args: infer P) => void ? P extends [Notification<void>] | [] ? K : never : never; }[keyof T]`*
 
-*Defined in [NotificationCenter.ts:3](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L3)*
+*Defined in [NotificationCenter.ts:3](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L3)*
 
 ___
-<a id="notificationlistener"></a>
 
 ###  NotificationListener
 
-**Ƭ NotificationListener**: *`function`*
+Ƭ **NotificationListener**: *function*
 
-*Defined in [NotificationCenter.ts:9](https://github.com/nilennoct/notification-queue/blob/0247334/src/NotificationCenter.ts#L9)*
+*Defined in [NotificationCenter.ts:9](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L9)*
 
-#### Type declaration
-▸(notification: *[Notification](classes/notification.md)<`any`>*): `void`
+#### Type declaration:
+
+▸ (`notification`: [Notification](classes/notification.md)‹*any*›): *void*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| notification | [Notification](classes/notification.md)<`any`> |
-
-**Returns:** `void`
-
-___
-
+Name | Type |
+------ | ------ |
+`notification` | [Notification](classes/notification.md)‹*any*› |
