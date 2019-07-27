@@ -2,6 +2,7 @@ A JavaScript implement of NotificationQueue and NotificationCenter.
 
 [![npm](https://badgen.net/npm/v/notification-queue)](https://www.npmjs.com/package/notification-queue)
 ![license](https://badgen.net/npm/license/notification-queue)
+[![travis](https://badgen.net/travis/nilennoct/notification-queue)](https://travis-ci.org/nilennoct/notification-queue)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fnilennoct%2Fnotification-queue.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fnilennoct%2Fnotification-queue?ref=badge_shield)
 
 ## Installation
