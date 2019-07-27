@@ -69,7 +69,8 @@ Adds an entry to the notification center and returns an opaque object to act as 
 ```typescript
 const token = NotificationCenter.default.addObserver('update', null, (notification) => {
     console.log('Update');
-});```
+});
+```
 
 **Type parameters:**
 
