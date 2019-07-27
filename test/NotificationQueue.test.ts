@@ -316,6 +316,7 @@ describe('Coalescing', function () {
 });
 
 function createMockListener(done?: jest.DoneCallback) {
+    // @ts-ignore
     return jest.fn((notification: Notification<string>) => {
         if (done) {
             done();

@@ -214,7 +214,3 @@ function addObserver(observer: any, name: string, sender: any, shouldRemove: boo
         });
     });
 }
-
-const p = new Promise((resolve) => {
-    resolve(124);
-});
