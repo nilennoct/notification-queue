@@ -1,50 +1,44 @@
-> **[notification-queue](../README.md)**
-
-[NotificationObserver](notificationobserver.md) /
+[notification-queue](../README.md) / NotificationObserver
 
 # Interface: NotificationObserver
 
-## Hierarchy
-
-* **NotificationObserver**
-
-## Index
+## Table of contents
 
 ### Properties
 
-* [listener](notificationobserver.md#listener)
-* [name](notificationobserver.md#name)
-* [object](notificationobserver.md#object)
-* [observer](notificationobserver.md#observer)
+- [listener](notificationobserver.md#listener)
+- [name](notificationobserver.md#name)
+- [object](notificationobserver.md#object)
+- [observer](notificationobserver.md#observer)
 
 ## Properties
 
-###  listener
+### listener
 
-• **listener**: *string | [NotificationListener](../README.md#notificationlistener)*
+• **listener**: *string* \| [*NotificationListener*](../README.md#notificationlistener)
 
-*Defined in [NotificationCenter.ts:15](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L15)*
+Defined in: [NotificationCenter.ts:15](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L15)
 
 ___
 
-###  name
+### name
 
 • **name**: *string*
 
-*Defined in [NotificationCenter.ts:13](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L13)*
+Defined in: [NotificationCenter.ts:13](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L13)
 
 ___
 
-###  object
+### object
 
-• **object**: *object | null*
+• **object**: ``null`` \| *object*
 
-*Defined in [NotificationCenter.ts:14](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L14)*
+Defined in: [NotificationCenter.ts:14](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L14)
 
 ___
 
-###  observer
+### observer
 
 • **observer**: *any*
 
-*Defined in [NotificationCenter.ts:12](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L12)*
+Defined in: [NotificationCenter.ts:12](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L12)
