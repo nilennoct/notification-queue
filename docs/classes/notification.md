@@ -1,88 +1,94 @@
-> **[notification-queue](../README.md)**
+[notification-queue](../README.md) / Notification
 
-[Notification](notification.md) /
-
-# Class: Notification <**T**>
+# Class: Notification<T\>
 
 A container for information broadcast through a notification center to all registered observers.
 
 ## Type parameters
 
-▪ **T**
+| Name | Default | Description |
+| :------ | :------ | :------ |
+| `T` | *void* | The type of data. |
 
-The type of data.
-
-## Hierarchy
-
-* **Notification**
-
-## Index
+## Table of contents
 
 ### Constructors
 
-* [constructor](notification.md#constructor)
+- [constructor](notification.md#constructor)
 
 ### Properties
 
-* [data](notification.md#data)
-* [name](notification.md#name)
-* [object](notification.md#object)
+- [data](notification.md#data)
+- [name](notification.md#name)
+- [object](notification.md#object)
 
 ## Constructors
 
-###  constructor
+### constructor
 
-\+ **new Notification**(`name`: string, `object?`: undefined | object): *[Notification](notification.md)*
-
-*Defined in [Notification.ts:8](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/Notification.ts#L8)*
+\+ **new Notification**<T\>(`name`: *string*, `object?`: *object*): [*Notification*](notification.md)<T\>
 
 Initializes a new notification.
 
-**Parameters:**
+#### Type parameters
 
-Name | Type | Description |
------- | ------ | ------ |
-`name` | string | The name of notification. |
-`object?` | undefined \| object | An object that the poster wishes to send to observers.  |
+| Name | Default |
+| :------ | :------ |
+| `T` | *void* |
 
-**Returns:** *[Notification](notification.md)*
+#### Parameters
 
-\+ **new Notification**(`name`: string, `object`: object | null, `data`: `T`): *[Notification](notification.md)*
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name` | *string* | The name of notification. |
+| `object?` | *object* | An object that the poster wishes to send to observers. |
 
-*Defined in [Notification.ts:15](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/Notification.ts#L15)*
+**Returns:** [*Notification*](notification.md)<T\>
+
+Defined in: [Notification.ts:8](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/Notification.ts#L8)
+
+\+ **new Notification**<T\>(`name`: *string*, `object`: ``null`` \| *object*, `data`: T): [*Notification*](notification.md)<T\>
 
 Initializes a new notification.
 
-**Parameters:**
+#### Type parameters
 
-Name | Type | Description |
------- | ------ | ------ |
-`name` | string | The name of notification. |
-`object` | object \| null | An object that the poster wishes to send to observers.  |
-`data` | `T` | Optional data about the the notification.  |
+| Name | Default |
+| :------ | :------ |
+| `T` | *void* |
 
-**Returns:** *[Notification](notification.md)*
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name` | *string* | The name of notification. |
+| `object` | ``null`` \| *object* | An object that the poster wishes to send to observers. |
+| `data` | T | Optional data about the the notification. |
+
+**Returns:** [*Notification*](notification.md)<T\>
+
+Defined in: [Notification.ts:15](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/Notification.ts#L15)
 
 ## Properties
 
-###  data
+### data
 
-• **data**: *`T`*
+• `Readonly` **data**: T
 
-*Defined in [Notification.ts:8](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/Notification.ts#L8)*
-
-___
-
-###  name
-
-• **name**: *string*
-
-*Defined in [Notification.ts:6](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/Notification.ts#L6)*
+Defined in: [Notification.ts:8](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/Notification.ts#L8)
 
 ___
 
-###  object
+### name
 
-• **object**: *object | null*
+• `Readonly` **name**: *string*
 
-*Defined in [Notification.ts:7](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/Notification.ts#L7)*
+Defined in: [Notification.ts:6](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/Notification.ts#L6)
+
+___
+
+### object
+
+• `Readonly` **object**: ``null`` \| *object*
+
+Defined in: [Notification.ts:7](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/Notification.ts#L7)

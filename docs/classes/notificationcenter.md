@@ -1,67 +1,71 @@
-> **[notification-queue](../README.md)**
-
-[NotificationCenter](notificationcenter.md) /
+[notification-queue](../README.md) / NotificationCenter
 
 # Class: NotificationCenter
 
 A notification dispatch mechanism that enables the broadcast of information to registered observers.
 
-## Hierarchy
+## Table of contents
 
-* **NotificationCenter**
+### Constructors
 
-## Index
+- [constructor](notificationcenter.md#constructor)
 
 ### Properties
 
-* [list](notificationcenter.md#protected-list)
-* [defaultCenter](notificationcenter.md#static-private-defaultcenter)
+- [list](notificationcenter.md#list)
+- [defaultCenter](notificationcenter.md#defaultcenter)
 
 ### Accessors
 
-* [default](notificationcenter.md#static-default)
+- [default](notificationcenter.md#default)
 
 ### Methods
 
-* [addObserver](notificationcenter.md#addobserver)
-* [post](notificationcenter.md#post)
-* [removeObserver](notificationcenter.md#removeobserver)
+- [addObserver](notificationcenter.md#addobserver)
+- [post](notificationcenter.md#post)
+- [removeObserver](notificationcenter.md#removeobserver)
+
+## Constructors
+
+### constructor
+
+\+ **new NotificationCenter**(): [*NotificationCenter*](notificationcenter.md)
+
+**Returns:** [*NotificationCenter*](notificationcenter.md)
 
 ## Properties
 
-### `Protected` list
+### list
 
-• **list**: *[NotificationObserver](../interfaces/notificationobserver.md)[]* =  []
+• `Protected` **list**: [*NotificationObserver*](../interfaces/notificationobserver.md)[]= []
 
-*Defined in [NotificationCenter.ts:23](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L23)*
+Defined in: [NotificationCenter.ts:23](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L23)
 
 ___
 
-### `Static` `Private` defaultCenter
+### defaultCenter
 
-▪ **defaultCenter**: *[NotificationCenter](notificationcenter.md)*
+▪ `Static` `Private` **defaultCenter**: [*NotificationCenter*](notificationcenter.md)
 
-*Defined in [NotificationCenter.ts:22](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L22)*
+Defined in: [NotificationCenter.ts:22](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L22)
 
 ## Accessors
 
-### `Static` default
+### default
 
-• **get default**(): *[NotificationCenter](notificationcenter.md)*
-
-*Defined in [NotificationCenter.ts:28](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L28)*
+• `Static` get **default**(): [*NotificationCenter*](notificationcenter.md)
 
 Returns the default notification center.
 
-**Returns:** *[NotificationCenter](notificationcenter.md)*
+**Returns:** [*NotificationCenter*](notificationcenter.md)
+
+Defined in: [NotificationCenter.ts:28](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L28)
 
 ## Methods
 
-###  addObserver
+### addObserver
 
-▸ **addObserver**<**T**>(`forName`: string, `object`: object | null, `listener`: function): *object*
-
-*Defined in [NotificationCenter.ts:47](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L47)*
+▸ **addObserver**<T\>(`forName`: *string*, `object`: ``null`` \| *object*, `listener`: (`notification`: [*Notification*](notification.md)<T\>) => *void*): *object*
 
 Adds an entry to the notification center and returns an opaque object to act as the observer.
 
@@ -69,40 +73,27 @@ Adds an entry to the notification center and returns an opaque object to act as 
 ```typescript
 const token = NotificationCenter.default.addObserver('update', null, (notification) => {
     console.log('Update');
-});
-```
+});```
 
-**Type parameters:**
+#### Type parameters
 
-▪ **T**
+| Name |
+| :------ |
+| `T` |
 
-**Parameters:**
+#### Parameters
 
-▪ **forName**: *string*
-
-The name of the notification for which to register the observer.
-
-▪ **object**: *object | null*
-
-The object whose notifications the observer wants to receive.
-
-▪ **listener**: *function*
-
-The callback which will be notified when the notification posted.
-
-▸ (`notification`: [Notification](notification.md)‹*`T`*›): *void*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`notification` | [Notification](notification.md)‹*`T`*› |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `forName` | *string* | The name of the notification for which to register the observer. |
+| `object` | ``null`` \| *object* | The object whose notifications the observer wants to receive. |
+| `listener` | (`notification`: [*Notification*](notification.md)<T\>) => *void* | The callback which will be notified when the notification posted. |
 
 **Returns:** *object*
 
-▸ **addObserver**<**T**>(`observer`: `T`, `name`: string, `object`: object | null, `selector`: [KeyOfListener](../README.md#keyoflistener)‹*`T`*›): *void*
+Defined in: [NotificationCenter.ts:47](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L47)
 
-*Defined in [NotificationCenter.ts:76](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L76)*
+▸ **addObserver**<T\>(`observer`: T, `name`: *string*, `object`: ``null`` \| *object*, `selector`: [*KeyOfListener*](../README.md#keyoflistener)<T\>): *void*
 
 Adds an entry to the notification center with an observer and a notification selector.
 
@@ -130,168 +121,157 @@ const component = new Component();
 NotificationCenter.default.addObserver(component, 'update', null, 'onNotify');
 ```
 
-**Type parameters:**
+#### Type parameters
 
-▪ **T**: *object*
+| Name | Type |
+| :------ | :------ |
+| `T` | *object* |
 
-**Parameters:**
+#### Parameters
 
-Name | Type | Description |
------- | ------ | ------ |
-`observer` | `T` | Object registering as an observer. |
-`name` | string | The name of the notification for which to register the observer. |
-`object` | object \| null | The object whose notifications the observer wants to receive. |
-`selector` | [KeyOfListener](../README.md#keyoflistener)‹*`T`*› | The name of method which will be notified when the notification posted. |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `observer` | T | Object registering as an observer. |
+| `name` | *string* | The name of the notification for which to register the observer. |
+| `object` | ``null`` \| *object* | The object whose notifications the observer wants to receive. |
+| `selector` | [*KeyOfListener*](../README.md#keyoflistener)<T\> | The name of method which will be notified when the notification posted. |
 
 **Returns:** *void*
 
-▸ **addObserver**<**T**>(`observer`: object, `name`: string, `object`: object | null, `listener`: function): *void*
+Defined in: [NotificationCenter.ts:76](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L76)
 
-*Defined in [NotificationCenter.ts:84](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L84)*
+▸ **addObserver**<T\>(`observer`: *object*, `name`: *string*, `object`: ``null`` \| *object*, `listener`: (...`args`: *any*[]) => *void*): *void*
 
 Adds an entry to the notification center with an observer and a callback.
 
-**Type parameters:**
+#### Type parameters
 
-▪ **T**
+| Name |
+| :------ |
+| `T` |
 
-**Parameters:**
+#### Parameters
 
-▪ **observer**: *object*
-
-Object registering as an observer.
-
-▪ **name**: *string*
-
-The name of the notification for which to register the observer.
-
-▪ **object**: *object | null*
-
-The object whose notifications the observer wants to receive.
-
-▪ **listener**: *function*
-
-The callback which will be notified when the notification posted.
-
-▸ (...`args`: any[]): *void*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`...args` | any[] |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `observer` | *object* | Object registering as an observer. |
+| `name` | *string* | The name of the notification for which to register the observer. |
+| `object` | ``null`` \| *object* | The object whose notifications the observer wants to receive. |
+| `listener` | (...`args`: *any*[]) => *void* | The callback which will be notified when the notification posted. |
 
 **Returns:** *void*
 
+Defined in: [NotificationCenter.ts:84](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L84)
+
 ___
 
-###  post
+### post
 
-▸ **post**(`notification`: [Notification](notification.md)‹*any*›): *void*
-
-*Defined in [NotificationCenter.ts:170](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L170)*
+▸ **post**(`notification`: [*Notification*](notification.md)<any\>): *void*
 
 Posts a given notification to the notification center.
 
-**Parameters:**
+#### Parameters
 
-Name | Type | Description |
------- | ------ | ------ |
-`notification` | [Notification](notification.md)‹*any*› | The notification to be posted.  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `notification` | [*Notification*](notification.md)<any\> | The notification to be posted. |
 
 **Returns:** *void*
 
-▸ **post**(`name`: string, `object`: object | null, `data`: any): *void*
+Defined in: [NotificationCenter.ts:170](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L170)
 
-*Defined in [NotificationCenter.ts:177](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L177)*
+▸ **post**(`name`: *string*, `object`: ``null`` \| *object*, `data`: *any*): *void*
 
 Creates a notification with a given name, object, and data and posts it to the notification center.
 
-**Parameters:**
+#### Parameters
 
-Name | Type | Description |
------- | ------ | ------ |
-`name` | string | The name of the notification. |
-`object` | object \| null | The object posting the notification. |
-`data` | any | Optional data about the the notification.  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name` | *string* | The name of the notification. |
+| `object` | ``null`` \| *object* | The object posting the notification. |
+| `data` | *any* | Optional data about the the notification. |
 
 **Returns:** *void*
 
-▸ **post**(`name`: string, `object?`: undefined | object): *void*
+Defined in: [NotificationCenter.ts:177](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L177)
 
-*Defined in [NotificationCenter.ts:183](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L183)*
+▸ **post**(`name`: *string*, `object?`: *object*): *void*
 
 Creates a notification with a given name and object and posts it to the notification center.
 
-**Parameters:**
+#### Parameters
 
-Name | Type | Description |
------- | ------ | ------ |
-`name` | string | The name of the notification. |
-`object?` | undefined \| object | The object posting the notification.  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `name` | *string* | The name of the notification. |
+| `object?` | *object* | The object posting the notification. |
 
 **Returns:** *void*
+
+Defined in: [NotificationCenter.ts:183](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L183)
 
 ___
 
-###  removeObserver
+### removeObserver
 
-▸ **removeObserver**(`observer`: object): *void*
-
-*Defined in [NotificationCenter.ts:116](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L116)*
+▸ **removeObserver**(`observer`: *object*): *void*
 
 Removes all entries specifying a given observer from the notification center.
 
-**Parameters:**
+#### Parameters
 
-Name | Type | Description |
------- | ------ | ------ |
-`observer` | object | The notification observer.  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `observer` | *object* | The notification observer. |
 
 **Returns:** *void*
 
-▸ **removeObserver**(`observer`: object, `name`: string): *void*
+Defined in: [NotificationCenter.ts:116](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L116)
 
-*Defined in [NotificationCenter.ts:122](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L122)*
+▸ **removeObserver**(`observer`: *object*, `name`: *string*): *void*
 
 Removes all entries specifying a given observer and notification name from the notification center.
 
-**Parameters:**
+#### Parameters
 
-Name | Type | Description |
------- | ------ | ------ |
-`observer` | object | The notification observer. |
-`name` | string | The name of the notification.  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `observer` | *object* | The notification observer. |
+| `name` | *string* | The name of the notification. |
 
 **Returns:** *void*
 
-▸ **removeObserver**(`observer`: object, `object`: object): *void*
+Defined in: [NotificationCenter.ts:122](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L122)
 
-*Defined in [NotificationCenter.ts:128](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L128)*
+▸ **removeObserver**(`observer`: *object*, `object`: *object*): *void*
 
 Removes all entries specifying a given observer and notification object from the notification center.
 
-**Parameters:**
+#### Parameters
 
-Name | Type | Description |
------- | ------ | ------ |
-`observer` | object | The notification observer. |
-`object` | object | The object posting the notification.  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `observer` | *object* | The notification observer. |
+| `object` | *object* | The object posting the notification. |
 
 **Returns:** *void*
 
-▸ **removeObserver**(`observer`: object, `name`: string, `object`: object): *void*
+Defined in: [NotificationCenter.ts:128](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L128)
 
-*Defined in [NotificationCenter.ts:135](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationCenter.ts#L135)*
+▸ **removeObserver**(`observer`: *object*, `name`: *string*, `object`: *object*): *void*
 
 Removes all entries specifying a given observer, notification name and object from the notification center.
 
-**Parameters:**
+#### Parameters
 
-Name | Type | Description |
------- | ------ | ------ |
-`observer` | object | The notification observer. |
-`name` | string | The name of the notification. |
-`object` | object | The object posting the notification.  |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `observer` | *object* | The notification observer. |
+| `name` | *string* | The name of the notification. |
+| `object` | *object* | The object posting the notification. |
 
 **Returns:** *void*
+
+Defined in: [NotificationCenter.ts:135](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L135)

@@ -1,45 +1,43 @@
-> **[notification-queue](../README.md)**
-
-[NotificationCoalescing](notificationcoalescing.md) /
+[notification-queue](../README.md) / NotificationCoalescing
 
 # Enumeration: NotificationCoalescing
 
 The enum that specify how notifications are coalesced.
 
-## Index
+## Table of contents
 
 ### Enumeration members
 
-* [none](notificationcoalescing.md#none)
-* [onName](notificationcoalescing.md#onname)
-* [onSender](notificationcoalescing.md#onsender)
+- [none](notificationcoalescing.md#none)
+- [onName](notificationcoalescing.md#onname)
+- [onSender](notificationcoalescing.md#onsender)
 
 ## Enumeration members
 
-###  none
+### none
 
 • **none**: = 0
 
-*Defined in [NotificationQueue.ts:10](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationQueue.ts#L10)*
-
 Do not coalesce notifications in the queue.
+
+Defined in: [NotificationQueue.ts:10](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationQueue.ts#L10)
 
 ___
 
-###  onName
+### onName
 
-• **onName**: =  1 << 0
-
-*Defined in [NotificationQueue.ts:12](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationQueue.ts#L12)*
+• **onName**: = 1
 
 Coalesce notifications with the same name.
 
+Defined in: [NotificationQueue.ts:12](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationQueue.ts#L12)
+
 ___
 
-###  onSender
+### onSender
 
-• **onSender**: =  1 << 1
-
-*Defined in [NotificationQueue.ts:14](https://github.com/nilennoct/notification-queue/blob/5bc0109/src/NotificationQueue.ts#L14)*
+• **onSender**: = 2
 
 Coalesce notifications with the same object.
+
+Defined in: [NotificationQueue.ts:14](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationQueue.ts#L14)
