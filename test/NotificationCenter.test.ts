@@ -192,7 +192,7 @@ describe('Remove observer', () => {
 });
 
 function addObserver(observer: any, name: string, sender: any, shouldRemove: boolean) {
-    return new Promise((resolve, reject) => {
+    return new Promise<void>((resolve, reject) => {
         let timer: any = setTimeout(() => {
             if (shouldRemove) {
                 resolve();
