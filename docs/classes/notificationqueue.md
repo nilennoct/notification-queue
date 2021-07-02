@@ -32,65 +32,75 @@ A notification center buffer.
 
 ### constructor
 
-\+ **new NotificationQueue**(`notificationCenter`: [*NotificationCenter*](notificationcenter.md)): [*NotificationQueue*](notificationqueue.md)
+• **new NotificationQueue**(`notificationCenter`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `notificationCenter` | [*NotificationCenter*](notificationcenter.md) |
+| `notificationCenter` | [`NotificationCenter`](notificationcenter.md) |
 
-**Returns:** [*NotificationQueue*](notificationqueue.md)
+#### Defined in
 
-Defined in: [NotificationQueue.ts:47](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationQueue.ts#L47)
+[NotificationQueue.ts:47](https://github.com/nilennoct/notification-queue/blob/8e5e643/src/NotificationQueue.ts#L47)
 
 ## Properties
 
 ### list
 
-• `Protected` **list**: [*Notification*](notification.md)<void\>[]= []
+• `Protected` **list**: [`Notification`](notification.md)<`void`\>[] = `[]`
 
-Defined in: [NotificationQueue.ts:46](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationQueue.ts#L46)
+#### Defined in
+
+[NotificationQueue.ts:46](https://github.com/nilennoct/notification-queue/blob/8e5e643/src/NotificationQueue.ts#L46)
 
 ___
 
 ### notificationCenter
 
-• `Protected` `Readonly` **notificationCenter**: [*NotificationCenter*](notificationcenter.md)
+• `Protected` `Readonly` **notificationCenter**: [`NotificationCenter`](notificationcenter.md)
 
 ___
 
 ### scheduled
 
-• `Protected` **scheduled**: *boolean*= false
+• `Protected` **scheduled**: `boolean` = `false`
 
-Defined in: [NotificationQueue.ts:47](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationQueue.ts#L47)
+#### Defined in
+
+[NotificationQueue.ts:47](https://github.com/nilennoct/notification-queue/blob/8e5e643/src/NotificationQueue.ts#L47)
 
 ___
 
 ### defaultQueue
 
-▪ `Static` `Private` **defaultQueue**: [*NotificationQueue*](notificationqueue.md)
+▪ `Static` `Private` **defaultQueue**: [`NotificationQueue`](notificationqueue.md)
 
-Defined in: [NotificationQueue.ts:45](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationQueue.ts#L45)
+#### Defined in
+
+[NotificationQueue.ts:45](https://github.com/nilennoct/notification-queue/blob/8e5e643/src/NotificationQueue.ts#L45)
 
 ## Accessors
 
 ### default
 
-• `Static` get **default**(): [*NotificationQueue*](notificationqueue.md)
+• `Static` `get` **default**(): [`NotificationQueue`](notificationqueue.md)
 
 Returns the default notification queue.
 
-**Returns:** [*NotificationQueue*](notificationqueue.md)
+#### Returns
 
-Defined in: [NotificationQueue.ts:55](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationQueue.ts#L55)
+[`NotificationQueue`](notificationqueue.md)
+
+#### Defined in
+
+[NotificationQueue.ts:55](https://github.com/nilennoct/notification-queue/blob/8e5e643/src/NotificationQueue.ts#L55)
 
 ## Methods
 
 ### dequeueAsapNotifications
 
-▸ `Protected` **dequeueAsapNotifications**(`matching`: [*Notification*](notification.md)<void\>, `coalescing`: [*NotificationCoalescing*](../enums/notificationcoalescing.md)): *boolean*
+▸ `Protected` **dequeueAsapNotifications**(`matching`, `coalescing`): `boolean`
 
 Removes all notifications, except the first one, from the queue that match a provided notification using provided matching criteria.
 
@@ -98,18 +108,22 @@ Removes all notifications, except the first one, from the queue that match a pro
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `matching` | [*Notification*](notification.md)<void\> | The notification used for matching notifications to remove from the notification queue. |
-| `coalescing` | [*NotificationCoalescing*](../enums/notificationcoalescing.md) | A value indicating what criteria to use when matching attributes of notification to attributes of notifications in the queue. |
+| `matching` | [`Notification`](notification.md)<`void`\> | The notification used for matching notifications to remove from the notification queue. |
+| `coalescing` | [`NotificationCoalescing`](../enums/notificationcoalescing.md) | A value indicating what criteria to use when matching attributes of notification to attributes of notifications in the queue. |
 
-**Returns:** *boolean*
+#### Returns
 
-Defined in: [NotificationQueue.ts:122](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationQueue.ts#L122)
+`boolean`
+
+#### Defined in
+
+[NotificationQueue.ts:122](https://github.com/nilennoct/notification-queue/blob/8e5e643/src/NotificationQueue.ts#L122)
 
 ___
 
 ### dequeueNotifications
 
-▸ **dequeueNotifications**(`matching`: [*Notification*](notification.md)<void\>, `coalescing`: [*NotificationCoalescing*](../enums/notificationcoalescing.md)): *void*
+▸ **dequeueNotifications**(`matching`, `coalescing`): `void`
 
 Removes all notifications from the queue that match a provided notification using provided matching criteria.
 
@@ -117,18 +131,22 @@ Removes all notifications from the queue that match a provided notification usin
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `matching` | [*Notification*](notification.md)<void\> | The notification used for matching notifications to remove from the notification queue. |
-| `coalescing` | [*NotificationCoalescing*](../enums/notificationcoalescing.md) | A value indicating what criteria to use when matching attributes of notification to attributes of notifications in the queue. |
+| `matching` | [`Notification`](notification.md)<`void`\> | The notification used for matching notifications to remove from the notification queue. |
+| `coalescing` | [`NotificationCoalescing`](../enums/notificationcoalescing.md) | A value indicating what criteria to use when matching attributes of notification to attributes of notifications in the queue. |
 
-**Returns:** *void*
+#### Returns
 
-Defined in: [NotificationQueue.ts:108](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationQueue.ts#L108)
+`void`
+
+#### Defined in
+
+[NotificationQueue.ts:108](https://github.com/nilennoct/notification-queue/blob/8e5e643/src/NotificationQueue.ts#L108)
 
 ___
 
 ### enqueue
 
-▸ **enqueue**(`notification`: [*Notification*](notification.md)<any\>, `postingStyle`: [*PostingStyle*](../enums/postingstyle.md)): *void*
+▸ **enqueue**(`notification`, `postingStyle`): `void`
 
 Adds a notification to the notification queue with a specified posting style, and coalesce only notifications that match both the notification’s name and object.
 
@@ -136,14 +154,18 @@ Adds a notification to the notification queue with a specified posting style, an
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `notification` | [*Notification*](notification.md)<any\> | The notification to add to the queue. |
-| `postingStyle` | [*PostingStyle*](../enums/postingstyle.md) | The posting style for the notification. |
+| `notification` | [`Notification`](notification.md)<`any`\> | The notification to add to the queue. |
+| `postingStyle` | [`PostingStyle`](../enums/postingstyle.md) | The posting style for the notification. |
 
-**Returns:** *void*
+#### Returns
 
-Defined in: [NotificationQueue.ts:68](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationQueue.ts#L68)
+`void`
 
-▸ **enqueue**(`notification`: [*Notification*](notification.md)<any\>, `postingStyle`: [*PostingStyle*](../enums/postingstyle.md), `coalescing`: [*NotificationCoalescing*](../enums/notificationcoalescing.md)): *void*
+#### Defined in
+
+[NotificationQueue.ts:68](https://github.com/nilennoct/notification-queue/blob/8e5e643/src/NotificationQueue.ts#L68)
+
+▸ **enqueue**(`notification`, `postingStyle`, `coalescing`): `void`
 
 Adds a notification to the notification queue with a specified posting style and criteria for coalescing.
 
@@ -151,22 +173,30 @@ Adds a notification to the notification queue with a specified posting style and
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `notification` | [*Notification*](notification.md)<any\> | The notification to add to the queue. |
-| `postingStyle` | [*PostingStyle*](../enums/postingstyle.md) | The posting style for the notification. |
-| `coalescing` | [*NotificationCoalescing*](../enums/notificationcoalescing.md) | A value indicating what criteria to use when matching attributes of notification to attributes of notifications in the queue. |
+| `notification` | [`Notification`](notification.md)<`any`\> | The notification to add to the queue. |
+| `postingStyle` | [`PostingStyle`](../enums/postingstyle.md) | The posting style for the notification. |
+| `coalescing` | [`NotificationCoalescing`](../enums/notificationcoalescing.md) | A value indicating what criteria to use when matching attributes of notification to attributes of notifications in the queue. |
 
-**Returns:** *void*
+#### Returns
 
-Defined in: [NotificationQueue.ts:75](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationQueue.ts#L75)
+`void`
+
+#### Defined in
+
+[NotificationQueue.ts:75](https://github.com/nilennoct/notification-queue/blob/8e5e643/src/NotificationQueue.ts#L75)
 
 ___
 
 ### schedule
 
-▸ `Protected` **schedule**(): *void*
+▸ `Protected` **schedule**(): `void`
 
 Schedule buffered notifications, powered by [asap](https://www.npmjs.com/package/asap).
 
-**Returns:** *void*
+#### Returns
 
-Defined in: [NotificationQueue.ts:150](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationQueue.ts#L150)
+`void`
+
+#### Defined in
+
+[NotificationQueue.ts:150](https://github.com/nilennoct/notification-queue/blob/8e5e643/src/NotificationQueue.ts#L150)

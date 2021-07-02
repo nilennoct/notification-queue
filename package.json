@@ -9,7 +9,7 @@
     "build:lib": "tsc --module commonjs --outDir lib",
     "build:es": "tsc --module es6 --outDir es",
     "clean": "rm -rf es lib;",
-    "docs": "rm -rf docs && typedoc --plugin typedoc-plugin-example-tag,typedoc-plugin-markdown src/index.ts",
+    "docs": "rm -rf docs && typedoc --plugin typedoc-plugin-example-tag --plugin typedoc-plugin-markdown src/index.ts",
     "prepare": "run-s clean build",
     "test": "jest",
     "coverage": "jest --coverage"

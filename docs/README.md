@@ -28,32 +28,38 @@ notification-queue
 
 ### KeyOfListener
 
-Ƭ **KeyOfListener**<T\>: { [K in keyof T]: T[K] extends function ? P extends [Notification] \| [] ? K : never : never}[keyof T]
+Ƭ **KeyOfListener**<`T`\>: { [K in keyof T]: T[K] extends function ? P extends [Notification] \| [] ? K : never : never}[keyof `T`]
 
 #### Type parameters
 
 | Name | Type |
 | :------ | :------ |
-| `T` | *object* |
+| `T` | extends `object` |
 
-Defined in: [NotificationCenter.ts:3](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L3)
+#### Defined in
+
+[NotificationCenter.ts:3](https://github.com/nilennoct/notification-queue/blob/8e5e643/src/NotificationCenter.ts#L3)
 
 ___
 
 ### NotificationListener
 
-Ƭ **NotificationListener**: (`notification`: [*Notification*](classes/notification.md)<any\>) => *void*
+Ƭ **NotificationListener**: (`notification`: [`Notification`](classes/notification.md)<`any`\>) => `void`
 
 #### Type declaration
 
-▸ (`notification`: [*Notification*](classes/notification.md)<any\>): *void*
+▸ (`notification`): `void`
 
-#### Parameters
+##### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `notification` | [*Notification*](classes/notification.md)<any\> |
+| `notification` | [`Notification`](classes/notification.md)<`any`\> |
 
-**Returns:** *void*
+##### Returns
 
-Defined in: [NotificationCenter.ts:9](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L9)
+`void`
+
+#### Defined in
+
+[NotificationCenter.ts:9](https://github.com/nilennoct/notification-queue/blob/8e5e643/src/NotificationCenter.ts#L9)

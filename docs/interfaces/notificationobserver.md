@@ -15,30 +15,38 @@
 
 ### listener
 
-• **listener**: *string* \| [*NotificationListener*](../README.md#notificationlistener)
+• **listener**: `string` \| [`NotificationListener`](../README.md#notificationlistener)
 
-Defined in: [NotificationCenter.ts:15](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L15)
+#### Defined in
+
+[NotificationCenter.ts:15](https://github.com/nilennoct/notification-queue/blob/8e5e643/src/NotificationCenter.ts#L15)
 
 ___
 
 ### name
 
-• **name**: *string*
+• **name**: `string`
 
-Defined in: [NotificationCenter.ts:13](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L13)
+#### Defined in
+
+[NotificationCenter.ts:13](https://github.com/nilennoct/notification-queue/blob/8e5e643/src/NotificationCenter.ts#L13)
 
 ___
 
 ### object
 
-• **object**: ``null`` \| *object*
+• **object**: ``null`` \| `object`
 
-Defined in: [NotificationCenter.ts:14](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L14)
+#### Defined in
+
+[NotificationCenter.ts:14](https://github.com/nilennoct/notification-queue/blob/8e5e643/src/NotificationCenter.ts#L14)
 
 ___
 
 ### observer
 
-• **observer**: *any*
+• **observer**: `any`
 
-Defined in: [NotificationCenter.ts:12](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationCenter.ts#L12)
+#### Defined in
+
+[NotificationCenter.ts:12](https://github.com/nilennoct/notification-queue/blob/8e5e643/src/NotificationCenter.ts#L12)

@@ -15,18 +15,22 @@ The enum that specify when notifications are posted.
 
 ### asap
 
-• **asap**: = 0
+• **asap** = `0`
 
 The notification is posted as soon as possible.
 
-Defined in: [NotificationQueue.ts:22](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationQueue.ts#L22)
+#### Defined in
+
+[NotificationQueue.ts:22](https://github.com/nilennoct/notification-queue/blob/8e5e643/src/NotificationQueue.ts#L22)
 
 ___
 
 ### now
 
-• **now**: = 1
+• **now** = `1`
 
 The notification is posted immediately after coalescing.
 
-Defined in: [NotificationQueue.ts:24](https://github.com/nilennoct/notification-queue/blob/dd80ab8/src/NotificationQueue.ts#L24)
+#### Defined in
+
+[NotificationQueue.ts:24](https://github.com/nilennoct/notification-queue/blob/8e5e643/src/NotificationQueue.ts#L24)
