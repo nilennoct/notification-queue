@@ -29,7 +29,7 @@
     "jest": "^26.6.3",
     "npm-run-all": "^4.1.5",
     "ts-jest": "^26.5.6",
-    "typedoc": "^0.20.36",
+    "typedoc": "^0.21.2",
     "typedoc-plugin-example-tag": "^1.0.2",
     "typedoc-plugin-markdown": "^3.8.1",
     "typescript": "^4.2.4"
